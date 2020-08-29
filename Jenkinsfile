@@ -43,7 +43,7 @@ pipeline {
 			steps {
 				withAWS(region:'us-east-1', credentials:'aws_credentials') {
 					sh '''
-						kubectl apply -f Kubernetes/blue_deployment.yml
+						kubectl apply -f blue_deployment.yml
 					'''
 				}
 			}
@@ -53,7 +53,7 @@ pipeline {
 			steps {
 				withAWS(region:'us-east-1', credentials:'aws_credentials') {
 					sh '''
-						kubectl apply -f Kubernetes/green_deployment.yml
+						kubectl apply -f green_deployment.yml
 					'''
 				}
 			}
@@ -63,7 +63,7 @@ pipeline {
 			steps {
 				withAWS(region:'us-east-1', credentials:'aws_credentials') {
 					sh '''
-						kubectl apply -f Kubernetes/blue_service.yml
+						kubectl apply -f blue_service.yml
 					'''
 				}
 			}
@@ -79,7 +79,7 @@ pipeline {
 			steps {
 				withAWS(region:'us-east-1', credentials:'aws_credentials') {
 					sh '''
-						kubectl apply -f Kubernetes/green_service.yml
+						kubectl apply -f green_service.yml
 					'''
 				}
 			}
