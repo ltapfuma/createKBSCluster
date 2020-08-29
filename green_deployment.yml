@@ -1,0 +1,22 @@
+-----
+kind: ReplicationController
+apiVersion: v1
+metadata:
+    name: Clustergreen
+    labels:
+        app: Clustergreen
+spec:
+    replicas: 1
+    selector:
+        app: Clustergreen
+    template:
+        metadata:
+            labels:
+                app: Clustergreen
+        spec:
+            containers:
+                - name: Clustergreen
+                  image: ltapfuma/capstone-udacity
+                  ports:
+                      - name: http-server
+                        containerPort: 80
