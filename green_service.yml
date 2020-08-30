@@ -10,5 +10,6 @@ spec:
         - port: 8000
           targetPort: 80
     selector:
-        app: Clustergreen
+        app: capstonegreen
     type: LoadBalancer
+
