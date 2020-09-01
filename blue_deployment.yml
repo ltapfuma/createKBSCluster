@@ -1,4 +1,4 @@
------
+---
 kind: ReplicationController
 apiVersion: v1
 metadata:
@@ -20,4 +20,3 @@ spec:
                   ports:
                       - name: http-server
                         containerPort: 80
-
