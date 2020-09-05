@@ -33,7 +33,7 @@ pipeline {
 			steps {
 				withAWS(region:'us-east-1', credentials:'aws_credentials') {
 					sh '''
-						kubectl config use-context arn:aws:eks:us-east-1:835432431333:cluster/gnoc
+						kubectl config use-context arn:aws:eks:us-east-1:835432431333:cluster/deploy1
 					'''
 				}
 			}
