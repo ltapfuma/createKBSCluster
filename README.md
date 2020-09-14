@@ -2,7 +2,9 @@
 
 This is the final stage in the CI/CD deployment for the Blue/Green deployment. It has the following stages:
 
-####### Use this Repository files after you have created your infrastructure.Your 
+####### Use this Repository files after you have created your infrastructure.Your infrastructure create codes are in the repository below:
+
+https://github.com/ltapfuma/BlueGreen-Deployment.git
 
 Linting :-analyzes source code to flag programming errors
 Build Image : Build your Docker image of your EC2 running OS|Kubernates|Jenkins|Git|Docker
